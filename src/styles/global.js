@@ -116,6 +116,8 @@ const GlobalStyle = createGlobalStyle`
     cursor: pointer;
     background: none;
     border: none;
+    color: red;
+    font-size: 30px;
   }
 
   ul {
