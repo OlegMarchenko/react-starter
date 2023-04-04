@@ -1,5 +1,5 @@
-import './Header.scss'
-function Header({ title, avatar }) {
+
+function HeaderMobile({ title, avatar }) {
 
   return (
     <header className='header'>
@@ -8,4 +8,4 @@ function Header({ title, avatar }) {
   )
 }
 
-export default Header;
+export default HeaderMobile;

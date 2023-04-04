@@ -1,0 +1,14 @@
+
+
+.stats {
+  grid-area: stats;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: start;
+  grid-gap: 20px;
+  padding: 0 15px;
+  position: relative;
+    > li {
+      border: 1px solid #333;
+    }
+}

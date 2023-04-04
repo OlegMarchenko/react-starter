@@ -2,20 +2,36 @@
 @import "./src/styles/variables";
 
 
+* {
+  box-sizing: border-box;
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+p {
+  margin: 0;
+}
+
 .wrapper {
-  background-color: $background-color;
-  color: $text-color;
-  padding: $block-padding;
-
-  &__section {
-    display: flex;
-  }
-
-  &__btns {
-    @include vertical-list;
-    button {
-      width: $btn-width;
-      height: $btn-height;
-    }
-  }
+  background-color: #fff;
+  color: #333;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  grid-template-areas:
+          "header header header header"
+          "aside stats stats stats";
+;
 }
